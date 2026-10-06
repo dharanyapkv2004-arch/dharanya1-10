@@ -1,9 +1,13 @@
-DROP DATABASE IF EXISTS CollegeDB;
-CREATE DATABASE CollegeDB;
-USE CollegeDB;
+CREATE TABLE Course (
+    CourseID INT PRIMARY KEY,
+    CourseName VARCHAR(30),
+    Credits INT,
+    DepartmentID INT
+);
 
--- Create Course table
+INSERT INTO Course VALUES
+(201, 'Database Systems', 4, 101),
+(202, 'Data Structures', 3, 102),
+(203, 'Mathematics', 4, 103);
 
--- Insert three records
-
--- Display structure
+SELECT * FROM Course;
